@@ -1,0 +1,126 @@
+@use '../utils' as *;
+
+.content {
+	opacity: 0;
+	animation: content 1.2s 2s forwards;
+	height: 100vh;
+}
+
+.spinner {
+	position: fixed;
+	height: 100px;
+	width: 100px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%) scale(2);
+	animation: loader 3s forwards;
+}
+
+@keyframes content {
+	100% {
+		opacity: 1;
+		max-height: 100%;
+	}
+}
+
+@keyframes loader {
+	50% {
+		opacity: 1;
+	}
+
+	100% {
+		opacity: 0;
+		z-index: -1;
+	}
+}
+
+.spinner div {
+	height: 10px;
+	width: 10px;
+	border-radius: 50%;
+	background-color: $clr-primary;
+	position: absolute;
+	animation: scale 1.2s infinite linear;
+}
+
+@keyframes scale {
+	0%,
+	20%,
+	80%,
+	100% {
+		transform: scale(1);
+	}
+
+	50% {
+		transform: scale(1.5);
+	}
+}
+
+@for $i from 0 to 12 {
+	.spinner div:nth-child(#{$i + 1}) {
+		animation-delay: $i * 0.1s;
+	}
+}
+
+.spinner div:nth-child(1) {
+	top: 65px;
+	left: 79.64px;
+}
+
+.spinner div:nth-child(2) {
+	top: 79.64px;
+	left: 65px;
+}
+
+.spinner div:nth-child(3) {
+	top: 85px;
+	left: 45px;
+}
+
+.spinner div:nth-child(4) {
+	top: 79.64px;
+	left: 25px;
+}
+
+.spinner div:nth-child(5) {
+	top: 65px;
+	left: 10.36px;
+}
+
+.spinner div:nth-child(6) {
+	top: 45px;
+	left: 5px;
+}
+
+.spinner div:nth-child(7) {
+	top: 25px;
+	left: 10.36px;
+}
+
+.spinner div:nth-child(8) {
+	top: 10.36px;
+	left: 25px;
+}
+
+.spinner div:nth-child(9) {
+	top: 5px;
+	left: 45px;
+}
+
+.spinner div:nth-child(10) {
+	top: 10.36px;
+	left: 65px;
+}
+
+.spinner div:nth-child(11) {
+	top: 25px;
+	left: 79.64px;
+}
+
+.spinner div:nth-child(12) {
+	top: 45px;
+	left: 85px;
+}

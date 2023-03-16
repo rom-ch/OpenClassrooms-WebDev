@@ -1,0 +1,21 @@
+@use '../utils' as *;
+
+.header {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding-block: 0.9rem;
+	position: relative;
+
+	h1 {
+		font-family: $ff-shrik;
+		font-size: 2.5rem;
+		margin: 0;
+	}
+
+	a {
+		font-size: 1.5rem;
+		position: absolute;
+		left: 15px;
+	}
+}

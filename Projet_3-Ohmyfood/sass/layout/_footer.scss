@@ -1,0 +1,35 @@
+@use '../utils' as *;
+
+.footer {
+	padding: 1.5rem;
+	background-color: $clr-bg-dark;
+	color: $clr-neutral-100;
+
+	&__title {
+		font-family: $ff-shrik;
+		font-size: 20px;
+		font-weight: lighter;
+		margin-bottom: 1.2rem;
+	}
+
+	&__list {
+		display: flex;
+		padding: 0;
+		flex-direction: column;
+		gap: 0.7rem;
+	}
+
+	&__list-link {
+		display: flex;
+		gap: 0.7rem;
+		font-size: 0.9rem;
+
+		span i {
+			width: 14px;
+		}
+
+		p {
+			margin: 0;
+		}
+	}
+}

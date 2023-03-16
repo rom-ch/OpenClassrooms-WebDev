@@ -1,0 +1,19 @@
+@use '../utils' as *;
+
+.btn {
+	display: block;
+	color: $clr-neutral-100;
+	background: linear-gradient(175deg, $clr-secondary, 55%, $clr-primary);
+	font-size: 18px;
+	font-weight: 500;
+	padding: 1.1rem 1.3rem;
+	border-radius: 100px;
+	width: fit-content;
+	margin: 0 auto;
+	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+
+	&:hover {
+		opacity: 0.8;
+		box-shadow: 0 4px 10px 1px rgba(0, 0, 0, 0.4);
+	}
+}

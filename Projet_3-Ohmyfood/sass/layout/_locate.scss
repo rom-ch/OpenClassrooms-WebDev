@@ -1,0 +1,30 @@
+@use '../utils' as *;
+
+.locate {
+	background-color: $clr-bg-light-200;
+	color: $clr-bg-dark;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	box-shadow: inset 0 5px 6px -6px rgba(0, 0, 0, 0.5);
+
+	p {
+		font-size: 18px;
+		font-weight: 700;
+		position: relative;
+
+		&::before {
+			content: '\f3c5';
+			font-family: 'Font Awesome 5 Free';
+			position: absolute;
+			left: -2rem;
+			bottom: 5px;
+		}
+	}
+}
+
+@media screen and (min-width: 992px) {
+	.locate {
+		grid-column: 1 / span 12;
+	}
+}

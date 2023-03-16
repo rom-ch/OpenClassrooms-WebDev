@@ -1,0 +1,157 @@
+@use '../utils' as *;
+
+.bg-img {
+	aspect-ratio: 16 / 11;
+	object-fit: cover;
+}
+
+.menu-container {
+	background-color: $clr-bg-light-100;
+}
+
+.menu {
+	padding: 1rem 1rem;
+	background-color: $clr-bg-light-100;
+	border-radius: 2rem 2rem 0 0;
+	position: relative;
+	top: -40px;
+
+	&__title {
+		font-family: $ff-shrik;
+		font-size: 1.7rem;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		letter-spacing: 1px;
+
+		h1 {
+			font-size: 1.7rem;
+		}
+
+		span {
+			margin-right: 0.5rem;
+
+			i {
+				font-weight: 400;
+				cursor: pointer;
+
+				&:hover {
+					font-weight: 900;
+					background-clip: text;
+					-webkit-background-clip: text;
+					-moz-background-clip: text;
+					color: transparent;
+					background-image: linear-gradient($clr-primary, $clr-secondary);
+					opacity: 0;
+					animation: iconShow 0.5s ease-out forwards;
+				}
+			}
+		}
+	}
+
+	@keyframes iconShow {
+		100% {
+			opacity: 1;
+		}
+	}
+	.btn {
+		margin-top: 3rem;
+		padding-inline: 3rem;
+	}
+}
+
+.food {
+	margin-bottom: 2.5rem;
+	max-width: 400px;
+	margin: 0 auto;
+
+	h2 {
+		font-weight: 400;
+		font-size: 1.2rem;
+		text-transform: uppercase;
+		margin-block: 1.5rem;
+
+		&::after {
+			content: '';
+			height: 3px;
+			width: 50px;
+			background-color: $clr-accent;
+			color: blue;
+			display: block;
+			position: relative;
+			top: 3px;
+		}
+	}
+}
+
+@media (min-width: 668px) and (max-width: 991px) {
+	.bg-img {
+		aspect-ratio: 16 / 9;
+	}
+
+	.flex {
+		display: flex;
+		flex-wrap: wrap;
+
+		.food {
+			width: 45%;
+		}
+	}
+}
+
+@media screen and (min-width: 992px) {
+	.menu-container {
+		position: relative;
+
+		.bg-img {
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			opacity: 0.5;
+			height: 100%;
+			width: 100%;
+			object-fit: cover;
+			object-position: center;
+		}
+	}
+
+	.menu {
+		border-radius: 0;
+		top: 0;
+		background-color: transparent;
+
+		&__title {
+			justify-content: center;
+
+			span {
+				margin-left: 2rem;
+			}
+		}
+
+		.btn {
+			margin-bottom: 51px;
+		}
+	}
+
+	.flex {
+		display: flex;
+		justify-content: space-between;
+		gap: 30px;
+	}
+
+	.food {
+		max-width: 1000px;
+		width: 500px;
+		opacity: 0.9;
+
+		h2 {
+			font-weight: 700;
+		}
+
+		.item {
+			width: 100%;
+		}
+	}
+}

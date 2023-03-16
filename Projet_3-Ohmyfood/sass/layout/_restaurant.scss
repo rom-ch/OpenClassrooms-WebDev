@@ -1,0 +1,47 @@
+@use '../utils' as *;
+
+.restaurant {
+	padding: 3rem 1.5rem 4rem;
+	background-color: $clr-bg-light-100;
+
+	&__title {
+		margin: 0 0 1.5rem;
+	}
+}
+
+.card-container {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	gap: 1.5rem;
+	position: relative;
+}
+
+@media (min-width: 668px) and (max-width: 991px) {
+	.restaurant {
+		.card-container {
+			flex-direction: row;
+			flex-wrap: wrap;
+		}
+
+		.link {
+			width: 48%;
+		}
+	}
+}
+
+@media screen and (min-width: 992px) {
+	.restaurant {
+		grid-column: 1 / span 12;
+		padding-block: 1.5rem 2rem;
+
+		.card-container {
+			flex-direction: row;
+			justify-content: space-between;
+
+			.link {
+				width: 25%;
+			}
+		}
+	}
+}
