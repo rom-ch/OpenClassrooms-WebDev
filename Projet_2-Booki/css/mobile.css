@@ -1,0 +1,130 @@
+@media screen and (max-width: 768px) {
+	.container {
+		padding: 0;
+	}
+
+	main {
+		padding: 0;
+	}
+
+	.hero {
+		flex-direction: column;
+		padding: 0;
+	}
+
+	.brand-logo {
+		margin: 20px;
+	}
+
+	.hero__nav {
+		width: 100%;
+	}
+
+	.hero__list-link {
+		padding-block: 10px;
+		border-top: 0;
+		border-bottom: 2px solid var(--clr-bg);
+		width: 100%;
+	}
+
+	.hero__list-link:hover {
+		border-top: 0;
+		border-bottom: 2px solid var(--clr-primary);
+	}
+
+	.intro {
+		padding: 0 25px;
+	}
+
+	.search-form {
+		width: 100%;
+		min-width: 0;
+	}
+
+	.search-form__submit {
+		display: none;
+	}
+
+	.search-form__submit--mobile {
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.filter {
+		flex-direction: column;
+		align-items: flex-start;
+	}
+
+	.filter h3 {
+		margin-bottom: 20px;
+	}
+
+	.filter__list-item {
+		margin-bottom: 10px;
+	}
+
+	.host-section {
+		flex-direction: column;
+	}
+
+	.host-section h3 {
+		font-size: 18px;
+	}
+
+	.host-section p {
+		font-size: 14px;
+	}
+
+	.host {
+		width: 100%;
+		order: 2;
+		background-color: white;
+		padding-top: 0;
+	}
+
+	.host .card-container {
+		flex-direction: column;
+		gap: 20px;
+		height: auto;
+	}
+
+	.host .card {
+		width: 100%;
+		height: 225px;
+		padding: 0;
+	}
+
+	.popular {
+		width: 100%;
+		border-radius: 0;
+	}
+
+	.popular .card-container {
+		height: auto;
+		gap: 20px;
+	}
+
+	.popular .card {
+		height: 160px;
+	}
+
+	.leisure {
+		padding: 0 20px;
+	}
+
+	.leisure .card-container {
+		height: auto;
+		gap: 20px;
+	}
+
+	.leisure .card-container .card {
+		width: 100%;
+		height: 225px;
+	}
+
+	.footer {
+		flex-direction: column;
+		gap: 30px;
+	}
+}

@@ -1,0 +1,95 @@
+@media (min-width: 769px) and (max-width: 992px) {
+	main {
+		padding: 0;
+	}
+
+	.hero {
+		padding-right: 0;
+	}
+
+	.intro {
+		padding: 0 15px;
+	}
+
+	.search-form {
+		margin: 20px auto 30px;
+		width: 50%;
+	}
+
+	.filter {
+		flex-direction: column;
+	}
+
+	.filter__title {
+		margin-bottom: 20px;
+	}
+
+	.filter__list {
+		justify-content: space-between;
+		flex-wrap: nowrap;
+		width: 100%;
+		gap: 10px;
+	}
+
+	.filter__list-link {
+		font-size: 16px;
+	}
+
+	.host-section {
+		flex-direction: column;
+	}
+
+	.host-section h3 {
+		font-size: 15px;
+	}
+
+	.host-section p {
+		font-size: 12px;
+	}
+
+	.host {
+		order: 2;
+		width: 100%;
+		background-color: white;
+		padding-top: 0;
+	}
+
+	.popular {
+		width: 100%;
+		border-radius: 0;
+	}
+
+	.popular .card-container {
+		flex-direction: row;
+		height: auto;
+	}
+
+	.popular .card {
+		width: 30%;
+	}
+
+	.leisure {
+		padding: 0 40px;
+	}
+
+	.leisure .card-container {
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		align-items: center;
+		gap: 30px;
+	}
+
+	.leisure .card-container .card {
+		border-radius: 20px;
+		box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.13);
+		overflow: hidden;
+		width: 30%;
+		height: 49%;
+	}
+
+	.footer {
+		gap: 0;
+		justify-content: space-between;
+	}
+}
