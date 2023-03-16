@@ -1,0 +1,28 @@
+.tag {
+   font-weight: 500;
+   font-size: 14px;
+   line-height: 20px;
+   color: #fff;
+   background-color: #FF6060;
+   text-align: center;
+   border-radius: 10px;
+   padding: 3px 41px 2px 40px;
+   white-space: nowrap;
+}
+
+@media (min-width: 769px) and (max-width: 992px) {
+   .tag {
+      font-size: 12px;
+      line-height: 17px;
+      padding: 3px 34px 2px 33px;
+   }
+}
+
+@media (max-width: 768px) {
+   .tag {
+      font-size: 10px;
+      line-height: 14px;
+      border-radius: 5px;
+      padding: 3px 28px 2px 27px;
+   }
+}

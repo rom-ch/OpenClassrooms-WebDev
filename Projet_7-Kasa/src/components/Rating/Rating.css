@@ -1,0 +1,24 @@
+.rating {
+   display: flex;
+   gap: 10px;
+}
+
+@media (min-width: 769px) and (max-width: 992px) {
+   .rating {
+      gap: 8px;
+   }
+
+   .rating svg {
+      width: 23px;
+   }
+}
+
+@media (max-width: 768px) {
+   .rating {
+      gap: 5px;
+   }
+
+   .rating svg {
+      width: 15px;
+   }
+}
